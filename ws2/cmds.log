@@ -1,0 +1,253 @@
+  328  cp /datasets/taxidata.tar.gz
+  329  cp /datasets/taxidata.tar.gz .
+  334  man tar
+  335  tar -x taxidata.tar.gz
+  336  man tar
+  337  tar -xvf taxidata.tar.gz 
+  338  ls
+  339  cd ..
+  340  ls
+  341  cd joshua23fa/
+  342  ls
+  343  cd taxidata/
+  344  ls
+  345  vim 2019-01.csv 
+  346  vim 2019-03.csv 
+  347  grip
+  348  grep
+  349  vim 2019-01.csv 
+  350  grep -E "john.*mary" 2019-01.csv 
+  351  vim 2019-01.csv 
+  352  grep "00:46:40" 2019-01.csv 
+  353  grep -E ".....2019-03-12" 2019-01.csv 
+  354  grep -E ".....2019-03-12" 2019-02.csv 
+  355  grep -E ".....2019-03-12" 2019-03.csv 
+  356  grep -E "......2019-03-12" 2019-03.csv 
+  357  ls
+  358  grep -E "......2019-03-12" 2019-04.csv 
+  359  grep -E "......2019-03-12" 2019-05
+  360* grep -E "......2019-03-12" 2019-06
+  361  grep -E "......2019-03-12" 2019-06.csv 
+  362  grep -E "......2019-03-12" 2019-07.csv 
+  363  grep -E "......2019-03-12" 2019-08.csv 
+  364  grep -E "......2019-03-12" 2019-09.csv 
+  365  grep -E "......2019-03-12" 2019-10.csv 
+  366  grep -E "......2019-03-12" 2019-11.csv 
+  367  grep -E "......2019-03-12" 2019-12.csv 
+  368  grep -E "......2019-03-12" 2019-03.csv | tail -n 20 > results.txt
+  369  ls
+  370  vim results.txt 
+  371  man wc
+  372  grep -E "......2019-03-12" 2019-03.csv | wc -l 
+  373  grep -E "......2019-03-12" 2019-03.csv
+  374  grep -E "......2019-03-12" 2019-03.csv | wc -l >> results.txt 
+  375  ls
+  393  rmdir -r taxidata/
+  394  rm -r taxidata
+  395  ls
+  396  rm taxidata.tar.gz 
+  397  ls
+  398  cd ws1
+  399  ls
+  400  cd cs131
+  401  ls
+  402  cd ..
+  403  ls
+  404  cd ..
+  405  ls
+  406  cd joshua23fa/
+  407  ls
+  408  git status
+  409  ls
+  410  cd ws1
+  411  ls
+  412  pws
+  413  pwd
+  414  mv cs131 /mnt/scratch/scratch/joshua23fa
+  415  mv cs131 /mnt/scratch/scratch/joshua23fa/
+  416  mv cs131 /mnt/scratch/joshua23fa/
+  417  ls
+  418  cd ..
+  419  ls
+  420  mv ws1 cs131/
+  421  ls
+  422  mv results.txt cs131
+  423  ls
+  424  cd cs131/
+  425  ls
+  426  mkdir ws2
+  427  ls
+  428  mv results.txt ws2
+  429  ls
+  430  cd ws2
+  431  ls
+  432  cd ..
+  433  ls
+  434  git status
+  435  add cs131/
+  436  git add cs131/
+  437  git status
+  438  git restore cs131/
+  439  git status
+  440  ls
+  441  cd cs131/
+  442  ls
+  443  mv ws1 ..
+  444  ls
+  445  cd ..
+  446  ls
+  447  cd cs1
+  448  cd cs131/
+  449  ls
+  450  mv ws2 ..
+  451  ls
+  452  cd ..
+  453  ls
+  454  rm -r cs131/
+  455  ls
+  456  cd cd
+  457  cd cs131/
+  458  ls
+  459  cd ..
+  460  ls
+  461  rm cs131/
+  462  rmdir cs131/
+  463  rm -r cs131/
+  464  ls
+  465  git status
+  466  ls
+  467  cd ..
+  468  ls
+  469  cd joshua23fa/
+  470  ls
+  471  git status
+  472  cd ws1
+  473  ls
+  474  cd ..
+  475  ls
+  476  git
+  477  git init
+  478  git status
+  479  git init
+  480  ls
+  481  git status
+  482  cd cs131/
+  483  ls
+  484  git init
+  485  cd ..
+  486  ls
+  487  mv ws1 cs131/
+  488  mv ws2 cs131/
+  489  ls
+  490  cd cs131/
+  491  ls
+  492  git status
+  493  cd ..
+  494  ls
+  495  git status
+  496  git restore cs131/
+  497  git status
+  498  git restore --staged cs131/
+  499  ls
+  500  git status 
+  501  git add cs131/
+  502  git status
+  503  git add cs131/
+  504  ls
+  505  cd ca
+  506  cd cs131/
+  507  ls
+  508  git status
+  509  git add ws2/
+  510  git status
+  511  git commit - m "added ws2"
+  512  git commit -m "added ws2"
+  513  git status
+  514  push origin master
+  515  git push origin master
+  516  git add origin https://github.com/Joshuaolszewski/cs131.git
+  517  git remote add origin https://github.com/Joshuaolszewski/cs131.git
+  518  git push origin master
+  519  git pull master
+  520  git pull origin master
+  521  ls
+  522  cd ..
+  523  ls
+  524  cd cs131/
+  525  ls
+  526  mv ws1 ..
+  527  mv ws2 ..
+  528  ls
+  529  cd ..
+  530  ls
+  531  git status
+  532  ls
+  533  rmdir cs131
+  534  rm - r cs131/
+  535  rm -r cs131/
+  536  ls
+  537  git status
+  538  rm -r cs131/
+  539  ls
+  540  git status
+  541  ls
+  542  rm -rf .git
+  543  ls
+  544  git status
+  545  rmdir cs131/
+  546  rm -r cs131/
+  547  ls
+  548  cd cs131/
+  549  ls
+  550  cd ..
+  551  ls
+  552  git status
+  553  cd ..
+  554  ls
+  555  cd joshua23fa/
+  556  ls
+  557  rm cs131/
+  558  rm -r cs131/
+  559  rm -rf cs131/
+  560  ls
+  561  git status
+  562  git init
+  563  git status
+  564  git remote add origin https://github.com/Joshuaolszewski/cs131.git
+  565  git add ws1
+  566  git add ws2/
+  567  ls
+  568  git status
+  569  git commit -m "ws2 added"
+  570  git push origin master
+  571  git pull origin
+  572  ls
+  573  git pull origin master
+  574  git push origin master
+  575  git status
+  576  git push origin master
+  577  git-f  push origin master
+  578  git -f push origin master
+  579  git push -f origin master
+  580  git status
+  581  ls
+  582  cd ws2
+  583  ls
+  584  history > cmds.log
+  585  ls
+  586  cat cmds.log 
+  587  vim cmds.log 
+  588  ls
+  589  rm cmds.log 
+  590  ls
+  591  history tail -n 100 > cmds.log
+  592  history tail 100 > cmds.log
+  593  history tail -100 > cmds.log
+  594  history | tail -100 > cmds.log
+  595  ls
+  596  vim cmds.log 
+  597  history
+  598  ls
+  599  rm cmds.log 
+  600  ls
+  601  history | tail -400 > cmds.log
