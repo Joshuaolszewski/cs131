@@ -1,0 +1,91 @@
+  640  less 2019-01.csv 
+  641  sort -k 8n 2019-01.csv
+  642  clear
+  643  ls
+  644  less 2019-01.csv > test.txt
+  645  ls
+  646  cat test.txt
+  647  ls
+  648  rm test.txt 
+  649  tail 2019-01.csv > test.txt
+  650  ls
+  651  cat test.txt
+  652  sort -k 8n test.txt
+  653  clear
+  654  sort -k 1 test.txt
+  655  head 2019-01.csv 
+  656  man sort
+  657  sort -k 8n -t , 
+  658  sort -k 8n -t , test.txt
+  659  rm test.txt 
+  660  ls
+  661  sort -k 8n -t , 2019-01.csv > sortedJan.txt
+  662  head sortedJan.txt 
+  663  man uniq
+  664  ls
+  665  rm sortedJan.txt 
+  666  ls
+  667  head 2019-01.csv | cut -f 8 -d , 
+  668  head 2019-01.csv 
+  669  cut -f 8 -d , 2019-01.csv > test.txt
+  670  head 2019-01.csv 
+  671  head test.txt 
+  672  ls
+  673  cat test.txt 
+  674  clear
+  675  ls
+  676  sort -n test.txt > sorted.txt
+  677  head sorted.txt 
+  678  tail sorted.txt 
+  679  sort -n test.txt > test.txt 
+  680  head test.txt 
+  681  rm test.txt 
+  682  ls
+  683  head sorted.txt 
+  684  uniq -c sorted.txt 
+  685  head sorted.txt 
+  686  uniq -c sorted.txt > uniq.txt
+  687  ls
+  688  head uniq.txt 
+  689  sort -k 1n uniq.txt > answer.txt
+  690  head answer.txt 
+  691  rm answer.txt 
+  692  sort -k 1 -nr uniq.txt > answer.txt
+  693  head answer.txt 
+  694  head -n 3 answer.txt > ws3.txt
+  695  cat ws3.txt 
+  696  vim ws3.txt 
+  697  ls
+  698  cut -f 8 -d , 2019-02.csv > febCut.txt
+  699  head febCut.txt 
+  700  head 2019-02.csv 
+  701  cleaer
+  702  clear
+  703  ls
+  704  head febCut.txt 
+  705  sort -n febCut.txt > sortedFeb.txt
+  706  head sorted
+  707  head sortedFeb.txt 
+  708  uniq -c sortedFeb.txt > uniqFeb.txt
+  709  head uniqFeb.txt 
+  710  rm uniqFeb.txt 
+  711  uniq -c sortedFeb.txt > uniqFeb.txt
+  712  sort -k 1 -nr uniqFeb.txt > answerFeb.txt
+  713  head answerFeb.txt 
+  714  head -n 3 >> ws3.txt 
+  715  cat ws3.txt 
+  716  head -n 3 answerFeb.txt >> ws3.txt 
+  717  vim ws3.txt 
+  718  ls
+  719  mv ws3.txt ..
+  720  ls
+  721  cd ..
+  722  ls
+  723  mv ws3.txt ws3
+  724  ls
+  725  cd ws3/
+  726  ls
+  727  history > cmds.log
+  728  ls
+  729  vim cmds.log 
+  730  history 100 > cmds.log
