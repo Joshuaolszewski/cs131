@@ -1,0 +1,42 @@
+  764  mkdir a1
+  765  cd a1
+  769  echo $HOME > a1.txt
+  774  id >> a1.txt 
+  782  mkdir temp
+  795  chmod u-x temp
+  798  cd temp
+  799  ls temp
+  800  ls -l temp
+  801  touch temp/test.txt
+  804  mkdir temp2
+  816  mv temp2 temp3
+  819  cp temp3
+  820  cp temp3 .
+  822  man cp
+  823  cp temp .
+  824  cp -r temp3 .
+  825  cp -r temp3 temp
+  826  ls
+  827  mkdir temp4
+  828  ls
+  829  cp temp3 temp4
+  850  cp temp3 temp4
+  851  cp -r temp3 temp4
+  906  ls /proc | grep "mem"
+  907  ls /proc | grep "cpu"
+  913  head /proc/meminfo
+  914  head -n 1 /proc/meminfo >> a1.txt 
+  916  head /proc/cpuinfo
+  917  cat /proc/cpuinfo 
+  918  head /proc/cpuinfo 
+  920  head /proc/cpuinfo 
+  921  tail /proc/cpuinfo 
+  923  ls /proc | grep "os"
+  924  ls /proc | grep "operating"
+  925  ls /etc/ | grep "operating"
+  926  ls /etc/ | grep "os"
+  927  head /etc/os-release 
+  928  head -n 1 /etc/os-release >> a1.txt 
+  930  ls -l /etc/os-release 
+  931  ls -l /etc/os-release >> a1.txt 
+  948  history 185 > cmds.log

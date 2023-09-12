@@ -1,0 +1,19 @@
+2) /mnt/scratch/joshua23fa   echo $HOME > a1.txt
+
+3) uid=1026(joshua23fa) gid=1026(joshua23fa) groups=1026(joshua23fa)id >> a1.txt
+
+4) cd no, ls yes, ls -l yes, cant create files under it.
+
+5) Yes, I can mv temp2 to temp3. It creates a temp3 directory. However, temp2 cannot be found in temp3. You are allowed to cp a directory with the -r option. 
+
+6) Yes I can find out which files contain info of memory and cpu meminfo and cpuinfo
+
+7)MemTotal:       73080512 kB
+
+8) 255 Processors
+   cpu architechtuure: POWER8 (architected), altivec supported
+   clock speed: 3425.000000MHz
+
+9) NAME="Red Hat Enterprise Linux" os-release
+
+10) rwx.
