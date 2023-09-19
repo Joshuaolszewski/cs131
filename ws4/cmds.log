@@ -1,0 +1,15 @@
+  980  vi ~/.bashrc
+  981  . ~/.bashrc
+  982  l
+  983  w
+ 1017  mkdir FARE
+ 1034  grep -E "^([^,]*,){7}74.0,7.0" 2019-06.csv | cut -d, -f11 > ~/ws4/FARE/[74.0]-[7.0].txt
+ 1046  grep -E "^([^,]*,){7}79.0,249.0" 2019-06.csv | cut -d, -f11 > ~/ws4/FARE/[79.0]-[249.0].txt
+ 1114  $ count=0; total=0; for i in $( awk '{ print}' \[74.0\]-\[7.0\].txt);do total=$(echo $total+$i | bc ); ((count++)); done; echo "scale=2; $total / $count" | bc > ~/ws4/ws4.txt
+ 1135  count=0
+ 1136  i=0
+ 1137  total=0
+ 1138  set
+ 1139  $ count=0; total=0; for i in $( awk '{ print}' \[79.0\]-\[249.0\].txt);do total=$(echo $total+$i | bc ); ((count++)); done; echo "scale=2; $total / $count" | bc >> ~/ws4/ws4.txt
+ 1195  history
+ 1196  history 226 > cmds.log

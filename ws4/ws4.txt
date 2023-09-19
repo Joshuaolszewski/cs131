@@ -1,0 +1,16 @@
+Average for [74.0]-[7.0]
+16.72
+
+Average For [79.0]-[249.0]
+8.02
+
+bash-4.4$ w^M
+      5      38     252^M
+bash-4.4$ l^M
+total 12^M
+drwxrwxr-x 2 joshua23fa joshua23fa 4096 Sep 19 14:40 FARE^M
+-rw-rw-r-- 1 joshua23fa joshua23fa   64 Sep 19 14:44 ws4.txt^M
+-rw-rw-r-- 1 joshua23fa joshua23fa  733 Sep 19 14:50 cmds.log^M
+-rw-rw-r-- 1 joshua23fa joshua23fa    0 Sep 19 14:51 test.txt^M
+bash-4.4$ exit^M
+
