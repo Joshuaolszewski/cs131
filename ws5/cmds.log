@@ -1,0 +1,12 @@
+  973  cd ~/taxidata/
+  974  ls
+  976  grep -E "^([^,]*,){7}234.0" 2019-08.csv | cut -d, -f9 | sort -n | uniq -c | sort -k1 -nr | head -100 | cut -b 9-14 > ~/ws5/top_100.txt
+ 1007  mkdir do234
+ 1008  for i in `cat ~/ws5/top_100.txt`; do grep -E "^([^,]*,){8}$i" ~/taxidata/2019-08.csv > ~/ws5/do234/$i.txt; done
+ 1009  ls
+ 1010  cd do234/
+ 1013  wc -l 1.0.txt >> ~/ws5/ws5.txt
+ 1014  wc -l 3.0.txt >> ~/ws5/ws5.txt
+ 1015  wc -l 48.0.txt >> ~/ws5/ws5.txt
+ 1016  wc -l 223.0.txt >> ~/ws5/ws5.txt
+ 1036  history 100 > cmds.log
