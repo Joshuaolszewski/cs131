@@ -1,0 +1,13 @@
+  978  grep -E "^[^,]*,\"2019-05-11" 2019-05.csv | cut -f17 -d, | paste -s -d+ | bc > ~/a2/temp1.txt
+  980  grep -E "^[^,]*,\"2019-05-11" 2019-05.csv | wc -l >> ~/a2/temp1.txt 
+  983  paste -s -d/ < ~/a2/temp1.txt | bc
+
+  992  grep -E "^[^,]*,\"2019-05-11" 2019-05.csv | cut -f17 -d, | sort -nr | head -1 >> ~/a2/a2.txt
+ 
+ 1058  grep -E "^([^,]*,){3}([3-9]|\d\d\d*)" 2019-05.csv | cut -d, -f9 | sort -n | uniq -c | sort -nr | head -10 >> ~/a2/a2.txt
+ 
+ 1066  grep -E "^[^,]*,\"2019-05-20" 2019-05.csv | cut -f8 -d, | sort -n | uniq -c | sort -nr | head -1 | cut -b9-14
+ 1069  grep -E "^([^,]*,)\"2019-05-20[^,]*,([^,]*,){5}237.0" 2019-05.csv | cut -f9 -d, | sort -n | uniq -c | sort -nr | head -1 | cut -b9-14 >> ~/a2/a2.txt
+ 
+ 1087  for FILE in *; do cut -f9 -d, $FILE >> temp.txt; done
+ 1089  sort -n temp.txt | uniq -c | sort -nr | head -1 >> ~/a2/a2.txt
