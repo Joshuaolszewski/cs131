@@ -1,0 +1,8 @@
+ 1043  sed -n '/^2.0/ w vendor2.csv' ~/taxidata/2019-11.csv 
+ 1052  wc -l vendor2.csv > ws6.txt
+
+ 1064  sed 's/://g; s/"//g; s/-//g' 2019-11.csv > ~/ws6/no-separators.csv
+ 1072  head -10 no-separators.csv >> ws6.txt 
+
+ 1087  sed 's/\.[^,]*//g' no-separators.csv > no-fractions.csv
+ 1092  head -10 no-fractions.csv >> ws6.txt 
