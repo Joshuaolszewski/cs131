@@ -1,0 +1,5 @@
+1) MOVIES needs "" added.
+2) YEAR needs () removed.
+3) GENRE needs extra whitespace removed
+4) DIRECTOR field needs to be added to schema. 
+5) "Director:" can be removed 
