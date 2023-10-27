@@ -1,0 +1,2 @@
+ 1016  awk -f script.awk ~/taxidata/2019-12.csv > results.txt
+ 1028  sort -nr -k2 results.txt | head -20 > ws7.txt
