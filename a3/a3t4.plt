@@ -12,4 +12,4 @@ set autoscale y
 
 set lmargin 20                                                               
 
-plot 'four.dat' using 1:2 with points pt 7
+plot 'four.dat' using 1:2 with points pt 1
