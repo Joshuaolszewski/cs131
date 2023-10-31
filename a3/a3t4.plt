@@ -1,5 +1,5 @@
-set terminal pngcairo
-set out 'a3t4.png'
+set terminal svg
+set out 'a3t4.svg'
 set style fill transparent solid 0.2 noborder
 set datafile separator ' '
 

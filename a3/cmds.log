@@ -1,0 +1,10 @@
+  735  awk -f one.awk ~/taxidata/2019-08.csv | sort -nr -k2 | head -10 > a3.txt
+  754  awk -f two.awk ~/taxidata/2019-08.csv | sort -nr -k3 | head -1 >> a3.txt 
+  820  awk -f three.awk ~/taxidata/2019-08.csv > three.dat
+  840  cat three.dat | sort -n > three.txt
+  842  mv three.txt three.dat
+  845  vim a3t3.plt
+  847  gnuplot
+  934  awk -f four.awk ~/taxidata/2019-08.csv | sort -n > four.dat
+  946  vim a3t4.plt
+  947  gnuplot

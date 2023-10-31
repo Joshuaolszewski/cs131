@@ -1,5 +1,5 @@
-set terminal pngcairo
-set out 'a3t3.png'
+set terminal svg
+set out 'a3t3.svg'
 set boxwidth 0.6 relative
 set style histogram 
 
