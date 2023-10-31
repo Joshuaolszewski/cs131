@@ -1,4 +1,5 @@
-set term dumb
+set terminal pngcairo
+set out 'a3t4.png'
 set style fill transparent solid 0.2 noborder
 set datafile separator ' '
 
