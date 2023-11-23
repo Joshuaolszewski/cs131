@@ -1,0 +1,97 @@
+In general, what is the most popular reason for a traffic stop? 
+
+562721 Moving Violation
+331333 Mechanical or Non-Moving Violation (V.C.)
+3519 MPC Violation
+2696 NA
+1329 Traffic Collision
+1205 BOLO/APB/Warrant
+1037 DUI Check
+929 Assistance to Motorist
+
+awk -F, '{print $20}' sf.csv | sort | uniq -c | sort -nr | head -8 >> metadata.txt 
+
+
+When do most DUI Checks occur? 
+
+ 81 00 
+  47 01 
+  30 02 
+  14 03 
+  14 04 
+   6 05 
+   7 06 
+  13 07 
+  22 08 
+  17 09 
+  21 10 
+  34 11 
+  22 12 
+  23 13 
+  35 14 
+  23 15 
+  40 16 
+  49 17 
+  74 18 
+  53 19 
+  66 20 
+ 102 21 
+ 130 22 
+ 115 23 
+
+grep -E "^([^,]*,){19}DUI Check" sf.csv | cut -d, -f3 | cut -d: -f1 | sort | uniq -c | sort -nr -k2 >> dui.txt 
+
+
+Of the people pulled over for suspected DUI, what is the ratio of male to female 
+
+ 782 male
+ 256 female
+
+grep -E "^([^,]*,){19}DUI Check" sf.csv | cut -d, -f10 | sort | uniq -c | sort -nr >> metadata.txt 
+
+
+Of the people pulled over for suspected DUI how many of each race? 
+
+black: 188
+white: 395
+hispanic: 211
+asian: 135
+
+awk -f dui.awk sf.csv >> dui.txt 
+
+
+
+Of the people pulled over for suspected DUI, whats the percentage in each age range?  
+
+10 3.56798
+20 32.1119
+30 25.0723
+40 17.8399
+50 12.8255
+60 2.98939
+70 0.96432
+80 0.192864
+90 0.289296
+
+awk -f duiage.awk sf.csv | sort -n -k1 >> dui.txt 
+
+
+
+Of the Men and Women pulled over for DUI, what is the distribution of warnings, citations, and arrests? 
+
+Male Warning 223
+Male Citation 337
+Male Arrest 106
+Female Warning 78
+Female Citation 121
+Female Arrest 28
+
+awk -f duigender.awk sf.csv >> dui.txt 
+
+
+In general, how many men/women were in all incedents? 
+
+male 638784
+female 265717
+
+awk -f generalage.awk sf.csv >> dui.txt 

@@ -1,0 +1,52 @@
+1) Number of Entries: 
+905071
+
+wc -l 
+
+2) Features: 
+	1  raw_row_number
+	2  date
+	3  time
+	4  location 
+	5  lat
+	6  lng
+	7  district 
+	8  subject_age
+	9  subject_race
+	10 subject_sex
+	11 type
+	12 arrest_made
+	13 citation_issued
+	14 warning_issues
+	15 outcome
+	16 contraband_found
+	17 search conducted
+	18 search_vehicle
+	19 search_basis
+	20 reason_for_stop
+	21 raw_search_vehicle_description
+	22 raw_result_of_contact_description
+
+3) Value Ranges:
+	1) 869921 - 893009
+	2) 2007-01-01 - 2016-06-30 
+	3) 00:00:00 - 23:59:00 
+	4) 
+	5) 
+	6) 
+	7) 
+	8) 10 - 100
+	9) white,asian/pacific islander, black, hispanic, other
+	10) male/female
+	11) vehicular
+	12) FALSE/TRUE
+	13) FALSE/TRUE
+	14) FALSE/TRUE
+	15) warning/arrest/citation 
+	16) FALSE/TRUE/NA
+	17) FALSE/TRUE/NA
+	18) FALSE/TRUE/NA
+	19) consent/other/NA
+	20) Assistance to Motorist/BOLO/APB/Warrant, DUI Check, MPC Violation, Mechanical or Non-Moving Violation (V.C.), Moving Violation, NA, Traffic Collision
+	21)
+	22)
